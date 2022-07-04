@@ -1,18 +1,23 @@
-import game.*;
+import AnonymousClasses.*;
+
+import java.text.Format;
+
 public class Main {
 
 
     public static void main(String[] args) {
 
-        Player player = new Player("Tourist");
-        Player.Backpack pb = player.backpack;
-        System.out.println(pb);
-        player.take("rope");
-        System.out.println(pb);
-        player.take("bottle");
-        player.take("flower");
-        System.out.println(pb);
 
+        CoolPrinter.add("Own, two,");
+        CoolPrinter.add("I love you.");
+        CoolPrinter.add("Three, four,");
+        CoolPrinter.add("Touch the floor.");
+        CoolPrinter.print(new Formatter() {
+                              public String format(String line) {
+                                  return "**" + line + "**";
+                              }
+                          }
+
+        );
     }
-
 }
