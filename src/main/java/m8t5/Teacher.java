@@ -9,8 +9,8 @@ public class Teacher extends People {
         this.subject = subject;
     }
 
-    
-    public String giveAlesson() {
+
+    public String giveALesson() {
         return "The lesson was ended";
     }
 
